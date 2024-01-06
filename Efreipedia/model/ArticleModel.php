@@ -8,18 +8,15 @@ class ArticleModel {
         $this->myBDD = myBDD::connexion();
     }
     
-    public function getArticle(){
-        return $this->myBDD->query("SELECT * FROM article")->fetchAll(PDO::FETCH_ASSOC);
+    public function getArticlebyCategorie($categorie){
+        return $this->myBDD->query("SELECT * FROM article WHERE categorie ='$categorie'")->fetchAll(PDO::FETCH_ASSOC);
     }
 
-    public function getUtilisateurbyName($name){
-        return $this->myBDD->query("SELECT * FROM article WHERE name='$name'")->fetch(PDO::FETCH_ASSOC);
-    }
-
-    public function setArticle($nom, $description, $date, $image){
-        $setArticle = $this->myBDD->prepare("INSERT INTO article(nom, description, date, image) VALUES (:nom, :description, :date, :image)");
+    public function setArticle($nom, $categorie, $description, $date, $image){
+        $setArticle = $this->myBDD->prepare("INSERT INTO article(nom, categorie, description, date, image) VALUES (:nom, :categorie, :description, :date, :image)");
         $parametres = [
             ':nom' => $nom,
+            ':categorie' => $categorie,
             ':description' => $description,
             ':date' => $date,
             ':image' => $image

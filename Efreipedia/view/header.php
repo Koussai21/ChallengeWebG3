@@ -14,8 +14,6 @@
 <header>
     <h1>Mon Site Web</h1>
     <a href="/inscription">S'inscrire</a>
-    <a href="/connexion">Se connecter</a>
-    <a href="/inscription">S'inscrire</a>
 </header>
 
 <body>

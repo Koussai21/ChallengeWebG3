@@ -10,12 +10,12 @@ class ArticleController {
 
     public function afficherArticles(){
         $articles = $this->articleModel->getArticle();
-        print_r($articles);
+        require_once './view/articles.php';
     }
 
     public function afficherArticleParNom($nom){
         $article = $this->articleModel->getUtilisateurbyName($nom);
-        print_r($article);
+        
     }
 
     public function ajouterArticle($nom, $description, $date, $image){
