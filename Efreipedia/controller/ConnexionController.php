@@ -15,7 +15,7 @@ class utilisateur{
     public function getUtilisateurConnexion() {
         if (isset($_POST['email'])) {
             $email = $_POST['email'];
-            $utilisateur = $this->model->getUtilisateurbyEmail($email);
+            $utilisateur = $this->modele->getUtilisateurbyEmail($email);
             if ($utilisateur && password_verify($_POST['motdepasse'], $customer['motdepasse'])) {
                 $_SESSION['pseudo'] = $utilisateur['pseudo'];
                 $_SESSION['email'] = $utilisateur['email'];
