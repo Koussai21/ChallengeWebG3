@@ -8,10 +8,10 @@ class utilisateurConnexion {
     }
     
     public function getUtilsateur(){
-        return $this->bdd->query("SELECT * FROM utilisateur")->fetchAll(PDO::FETCH_ASSOC);
+        return $this->myBDD->query("SELECT * FROM utilisateur")->fetchAll(PDO::FETCH_ASSOC);
     }
 
     public function getUtilisateurbyEmail($email){
-        return $this->bdd->query("SELECT * FROM utilisateur WHERE email='$email'")->fetch(PDO::FETCH_ASSOC);
+        return $this->myBDD->query("SELECT * FROM utilisateur WHERE email='$email'")->fetch(PDO::FETCH_ASSOC);
     }
 }
