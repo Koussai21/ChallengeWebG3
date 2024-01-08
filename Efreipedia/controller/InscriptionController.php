@@ -15,7 +15,7 @@ class InscriptionController{
             $tel = $_POST['telephone'];
             $email = $_POST['email'];
             $motdepasse = password_hash($_POST['motdepasse'], PASSWORD_DEFAULT);
-            if($this->model->setUtilisateur($pseudo,$email,$tel,$motdepasse)){
+            if($this->modele->setUtilisateur($pseudo,$email,$tel,$motdepasse)){
                 echo "<meta http-equiv='refresh' content='0;url=connexion'>";
             } else {
                 $this->getInscriptionForm();

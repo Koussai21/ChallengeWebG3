@@ -5,7 +5,7 @@ class utilisateur{
     protected $modele;
 
     public function __construct() {
-        $this->modele = new customer();
+        $this->modele = new utilisateurConnexion();
     }
 
     public function getConnexionForm() {
@@ -16,7 +16,7 @@ class utilisateur{
         if (isset($_POST['email'])) {
             $email = $_POST['email'];
             $utilisateur = $this->modele->getUtilisateurbyEmail($email);
-            if ($utilisateur && password_verify($_POST['motdepasse'], $customer['motdepasse'])) {
+            if ($utilisateur && password_verify($_POST['motdepasse'], $utilisateur['motdepasse'])) {
                 $_SESSION['pseudo'] = $utilisateur['pseudo'];
                 $_SESSION['email'] = $utilisateur['email'];
                 $_SESSION['telephone'] = $utilisateur['telephone'];
