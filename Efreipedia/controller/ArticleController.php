@@ -1,5 +1,5 @@
 <?php
-require_once 'articleModel.php';
+require_once 'ArticleModel.php';
 
 class ArticleController {
     private $articleModel;
@@ -13,13 +13,13 @@ class ArticleController {
         require_once './view/articles.php';
     }
 
-    public function afficherArticleParNom($nom){
-        $article = $this->articleModel->getUtilisateurbyName($nom);
+    public function afficherArticleParCategorie($categorie){
+        $article = $this->articleModel->getArticlebyCategorie($categorie);
         
     }
 
-    public function ajouterArticle($nom, $description, $date, $image){
-        $this->articleModel->setArticle($nom, $description, $date, $image);
+    public function ajouterArticle($nom, $categorie, $description, $date, $image){
+        $this->articleModel->setArticle($nom, $categorie, $description, $date, $image);
         echo "L'article a été ajouté avec succès.";
     }
 }
@@ -31,7 +31,7 @@ $articleController = new ArticleController();
 $articleController->afficherArticles();
 
 
-$articleController->afficherArticleParNom('Nom de l\'article');
+$articleController->afficherArticleParCategorie('Nom de l\'article');
 
 
-$articleController->ajouterArticle('Nouvel article', 'Description du nouvel article', '2024-01-06', 'chemin/vers/nouvelle_image.jpg');
+$articleController->ajouterArticle('Nouvel article','Categorie', 'Description du nouvel article', '2024-01-06', 'chemin/vers/nouvelle_image.jpg');
