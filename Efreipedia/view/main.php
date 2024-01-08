@@ -3,3 +3,4 @@
 $addresse = $_SERVER['REQUEST_URI'];
 
 route_request($addresse);
+?>

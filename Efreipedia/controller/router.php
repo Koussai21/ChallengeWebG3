@@ -9,7 +9,10 @@ function route_request($addresse){
     }
     elseif ($addresse === 'article') {
         require_once('view/articles.php');
-}
+    }
+    elseif ($addresse === 'accueil') {
+        require_once('view/accueil.php');
+    }
 else {
 
     echo '<h1>Erreur</h1>';
