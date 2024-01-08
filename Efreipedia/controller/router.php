@@ -7,7 +7,11 @@ function route_request($addresse){
         $customer=new InscriptionController();
         $customer->setUtilisateur();
     }
-    if($addresse === '/index'){
-        require_once './index.php';
-    }
+    elseif ($addresse === 'article') {
+        require_once('view/articles.php');
+}
+else {
+
+    echo '<h1>Erreur</h1>';
+}
 }

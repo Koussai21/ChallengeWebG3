@@ -14,6 +14,8 @@
 <header>
     <h1>Mon Site Web</h1>
     <a href="/inscription">S'inscrire</a>
+    <a href="index.php?page=accueil">Accueil</a>
+    <a href="index.php?page=article">Nos articles</a>
 </header>
 
 <body>
