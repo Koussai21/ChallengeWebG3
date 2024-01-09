@@ -48,6 +48,7 @@
         <a href="/accueil">Accueil</a>
         <a href="/connexion">Se connecter</a>
         <a href="/article">Nos articles</a>
+        <p>Bonjour <?=@$_SESSION['nom']?></p>
     </header>
 
 
