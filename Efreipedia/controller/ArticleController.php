@@ -1,5 +1,5 @@
 <?php
-require_once 'ArticleModel.php';
+require_once './model/ArticleModel.php';
 
 class ArticleController {
     private $articleModel;

@@ -8,7 +8,7 @@
             <div id="product" class="col-lg-4">
                 <h2 class="text-white"><?= $produits['nom'] ?></h2>
                 <p class="text-white"><?= $produits['categorie'] ?></p>
-                <p class="text-white"><?= $produits['description'] ?>€</p>    
+                <p class="text-white"><?= $produits['description'] ?></p>    
                 <a href="/"><button id="Commandez" type="button" class="btn btn-warning">voir plus</button></a>   
             </div> 
         </div></br>

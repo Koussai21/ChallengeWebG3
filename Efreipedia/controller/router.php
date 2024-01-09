@@ -12,7 +12,7 @@ function route_request($addresse){
         require_once './view/authentification.php';
     }
     elseif ($addresse === '/article') {
-        require_once('view/articles.php');
+        require_once 'view/articles.php';
     }
     elseif ($addresse === '/accueil') {
         require_once('view/accueil.php');
