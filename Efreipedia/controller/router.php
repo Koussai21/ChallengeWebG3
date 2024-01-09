@@ -9,8 +9,7 @@ function route_request($addresse){
     }
     elseif ($addresse === '/connexion') {
         require_once 'ConnexionController.php';
-        $utilisateur = new utilisateurConnexion;
-        $utilisateur->getUtilisateurConnexion();
+        require_once './view/authentification.php';
     }
     elseif ($addresse === '/article') {
         require_once('view/articles.php');

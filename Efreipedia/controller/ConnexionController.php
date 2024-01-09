@@ -9,7 +9,7 @@ class utilisateur{
     }
 
     public function getConnexionForm() {
-        require_once 'view/Connexion.php';
+        require_once 'view/authentification.php';
     }
    
     public function getUtilisateurConnexion() {
