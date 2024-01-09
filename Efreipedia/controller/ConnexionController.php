@@ -1,5 +1,5 @@
 <?php
-require_once './model/CustomerModel.php';
+require_once './model/ConnexionModel.php';
 
 class utilisateur{
     protected $modele;
