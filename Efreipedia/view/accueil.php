@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.x.x/dist/tailwind.min.css">
     <title>accueil</title>
 </head>
+
 <body>
-    
+    <h1>Bienvenue sur Efreipedia</h1>
+    <h2>L'encyclopédie libre</h2>
 </body>
 </html>

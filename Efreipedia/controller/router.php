@@ -4,13 +4,18 @@ function route_request($addresse){
     if($addresse === '/inscription'){
         require_once './view/inscription.php';
         require_once 'InscriptionController.php';
-        $customer=new InscriptionController();
-        $customer->setUtilisateur();
+        $utilisateur=new InscriptionController();
+        $utilisateur->setUtilisateur();
     }
-    elseif ($addresse === 'article') {
+    elseif ($addresse === '/connexion') {
+        require_once 'ConnexionController.php';
+        $utilisateur = new utilisateurConnexion;
+        $utilisateur->getUtilisateurConnexion();
+    }
+    elseif ($addresse === '/article') {
         require_once('view/articles.php');
     }
-    elseif ($addresse === 'accueil') {
+    elseif ($addresse === '/accueil') {
         require_once('view/accueil.php');
     }
 else {

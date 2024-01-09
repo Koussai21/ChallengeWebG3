@@ -41,12 +41,13 @@
     </style>
 </head>
 
-<body>
+
     <header>
         <h1>EFREIPEDIA</h1>
         <a href="/inscription">S'inscrire</a>
-        <a href="index.php?page=accueil">Accueil</a>
-        <a href="index.php?page=article">Nos articles</a>
+        <a href="/accueil">Accueil</a>
+        <a href="/connexion">Se connecter</a>
+        <a href="/article">Nos articles</a>
     </header>
-</body>
-</html>
+
+
