@@ -44,9 +44,11 @@
 
     <header>
         <h1>EFREIPEDIA</h1>
-        <a href="/inscription">S'inscrire</a>
+        <nav>
+            <a href="/inscription">S'inscrire</a>
+            <a href="/connexion">Se connecter</a>
+        </nav>
         <a href="/accueil">Accueil</a>
-        <a href="/connexion">Se connecter</a>
         <a href="/article">Nos articles</a>
         <a href="/forum">Forum</a>
         <p>Bonjour <?=@$_SESSION['nom']?></p>
