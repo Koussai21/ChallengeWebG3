@@ -17,6 +17,10 @@ function route_request($addresse){
     elseif ($addresse === '/accueil') {
         require_once('view/accueil.php');
     }
+    elseif ($addresse === '/forum') {
+        require_once 'ForumController.php';
+        require_once('view/forum.php');
+    }
 else {
 
     echo '<h1>Erreur</h1>';

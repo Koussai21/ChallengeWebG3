@@ -5,15 +5,11 @@
     <form>
       <div>
         <label>Name:</label>
-        <input type="text" name="name" required />
-      </div>
-      <div>
-        <label>Email:</label>
-        <input type="email" name="email" required />
+        <input type="text" name="Sujet" required />
       </div>
       <div>
         <label>Message:</label>
-        <textarea name="message" required></textarea>
+        <textarea name="Message" required></textarea>
       </div>
       <button>Submit</button>
     </form>
