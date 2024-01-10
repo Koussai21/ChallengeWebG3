@@ -3,6 +3,7 @@
 <?php require_once './controller/ArticleController.php';?>
 
 <body>
+    <h1>Nos articles</h1>   
 <?php foreach ($articles as $article) { ?>    
         <div id="container1" class="row border border-color-white">
             <div id="product" class="col-lg-4">
@@ -12,5 +13,5 @@
                 <a href="/"><button id="Commandez" type="button" class="btn btn-warning">voir plus</button></a>   
             </div> 
         </div></br>
-<?php } ?>            
+<?php } ?>        
 </body>
